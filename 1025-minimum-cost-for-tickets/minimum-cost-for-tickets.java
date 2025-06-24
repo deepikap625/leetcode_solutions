@@ -33,7 +33,7 @@ class Solution {
         int[] costs = {2, 7, 15};
 
         int result = solution.mincostTickets(days, costs);
-        System.out.println("Minimum cost: " + result);  // Output: 11
+        System.out.println("Minimum cost: " + result);  // Output: (7+2+2) = 11
     }
     }
 
