@@ -1,3 +1,5 @@
+/* For each number, calculate its complement (target - num) and check if it's already in the map.
+If found, return indices; otherwise, store the number and continue. */
 class Solution {
     public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<>();
@@ -24,22 +26,18 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         Solution dp = new Solution();
 
-        // Input array length
         System.out.print("Enter number of elements: ");
         int n = sc.nextInt();
 
-        // Input array elements
         int[] nums = new int[n];
         System.out.print("Enter the elements of the array: ");
         for (int i = 0; i < n; i++) {
             nums[i] = sc.nextInt();
         }
 
-        // Input target
         System.out.print("Enter the target sum: ");
         int target = sc.nextInt();
 
-        // Call twoSum and print result
         int[] result = dp.twoSum(nums, target);
         if (result.length == 2) {
             System.out.println("Indices: [" + result[0] + ", " + result[1] + "]");
