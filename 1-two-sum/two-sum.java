@@ -22,7 +22,7 @@ class Solution {
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Solution sol = new Solution();
+        Solution dp = new Solution();
 
         // Input array length
         System.out.print("Enter number of elements: ");
@@ -40,7 +40,7 @@ public class Main {
         int target = sc.nextInt();
 
         // Call twoSum and print result
-        int[] result = sol.twoSum(nums, target);
+        int[] result = dp.twoSum(nums, target);
         if (result.length == 2) {
             System.out.println("Indices: [" + result[0] + ", " + result[1] + "]");
         } else {
