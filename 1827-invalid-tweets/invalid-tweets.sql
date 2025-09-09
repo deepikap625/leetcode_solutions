@@ -1,5 +1,2 @@
 # Write your MySQL query statement below
-SELECT tweet_id
-FROM Tweets
-WHERE CHAR_LENGTH(content) > 15
-   OR content REGEXP '[^a-zA-Z0-9!\' ]';
+select tweet_id from Tweets where char_length(content) > 15 OR content regexp '[^a-zA-Z0-9!\' ]';
